@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <LinearLayout
+            android:id="@+id/list"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerviewDanhSachOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <View
+            android:background="@color/gray"
+
+            app:layout_constraintBottom_toTopOf="@id/bottom"
+            android:id="@+id/view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            app:layout_constraintVertical_bias="3"
+          android:layout_height="10dp"/>
+    <LinearLayout
+            android:id="@id/bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Tổng tiền"
+                android:layout_width="0dp"
+                android:gravity="end"
+                android:id="@+id/txtTest"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        <TextView
+
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:id="@+id/txtTongTien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

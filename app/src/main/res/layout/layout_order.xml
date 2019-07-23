@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@color/gray"
+              tools:context=".MainActivity"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+
+
+        <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:textStyle="bold"
+                    android:text="Tên món ăn"
+                    android:layout_weight="4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:text="SL"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_weight="3"
+                    android:gravity="end"
+                    android:text="Thành tiền"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <FrameLayout
+
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:id="@+id/fragment_container2"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@color/white"
+                    android:text="Hủy"
+                    android:id="@+id/btnHuy"
+                    android:layout_marginRight="8dp"
+                    android:textAllCaps="false"
+                    android:drawableTop="@drawable/ic_clear_black_24dp"
+                    android:layout_height="match_parent"/>
+            <Button
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@color/blue"
+                    android:id="@+id/btnGuiBep"
+                    android:text="Gửi bếp"
+                    android:layout_marginRight="8dp"
+                    android:textAllCaps="false"
+                    android:drawableTop="@drawable/icon_chef"
+                    android:layout_height="match_parent"/>
+            <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@color/blue2"
+                    android:text="Lưu"
+                    android:id="@+id/btnLuu"
+                    android:layout_marginRight="8dp"
+                    android:textAllCaps="false"
+                    android:drawableTop="@drawable/ic_save_black_24dp"
+                    android:layout_height="match_parent"/>
+
+            <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@color/green"
+                    android:text="Redo"
+                    android:id="@+id/btnRedo"
+                    android:layout_marginRight="8dp"
+                    android:textAllCaps="false"
+                    android:drawableTop="@drawable/ic_undo_black_24dp"
+                    android:layout_height="match_parent"/>
+            <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:id="@+id/btnUndo"
+                    android:background="@color/orange"
+                    android:text="Undo"
+
+                    android:textAllCaps="false"
+                    android:drawableTop="@drawable/ic_redo_black_24dp"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
